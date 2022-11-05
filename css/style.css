@@ -1,0 +1,103 @@
+/* start side nav */
+
+.sidenav{
+    display: flex;
+    position: fixed;
+    top:0px;
+    width:275px;
+    height:100vh;
+    flex-direction: column;
+    background-color:#181E31 ;
+    padding-top: 160px;
+    z-index: 988;
+    
+    }
+    .sidenav a{
+    position: relative;
+    text-decoration: none;
+    margin-top: 20px;
+    padding-left: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    }
+    
+    .sidenav a:before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 6px;
+        height: 37px;
+        background-color: rgba(254, 254, 254, 0.926);
+        transform: translate(-3%, -19%);
+        opacity: 0;
+    }
+    
+    
+    .sidenav a:after{
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 327px;
+        height: 37px;
+        background-color: rgb(115 127 217 / 15%);
+        transform: translate(-16%, -25%);
+        opacity: 0;
+    
+    }
+    
+    .fa-solid, .fas {
+    font-weight: 900;
+    font-size:1.2rem ;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    .fa-regular, .far{
+    font-weight: 900;
+    font-size:1.2rem ;
+    color: white;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    
+    .subnav a{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    margin-top: 20px;
+    padding-left: 10px;
+    color: #FFFFFF;
+    font-size: .8rem;
+    margin-left: 45px;
+    cursor: pointer;
+    }
+    
+    .subnav a:after{
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 274px;
+        height: 31px;
+        background-color: rgb(115 127 217 / 15%);
+        transform: translate(-16%, -27%);
+        opacity: 0;
+    }
+    .subnav a:before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: -41px;
+        width: 6px;
+        height: 31px;
+        background-color: rgba(254, 254, 254, 0.926);
+        transform: translate(-71%, -33%);
+        opacity: 0;
+    }
+    .subnav a:hover:before,.subnav a:hover:after, .sidenav a:hover:before,.sidenav a:hover:after{
+    opacity: 1;
+    }
+    
+    /* end side nav */
